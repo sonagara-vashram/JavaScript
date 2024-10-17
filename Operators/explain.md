@@ -78,7 +78,6 @@ Logical operators are used to combine or invert Boolean expressions.
 | Operator | Description                      | Example                   |
 |----------|----------------------------------|---------------------------|
 | `&&`     | Logical AND                      | `(a > 5 && b < 10)`       |
-| `||`     | Logical OR                       | `(a > 5 || b > 10)`       |
 | `!`      | Logical NOT                      | `!(a < 5)`                |
 
 **Example**:  
@@ -97,7 +96,6 @@ Bitwise operators perform operations on binary representations of numbers.
 | Operator | Description                      | Example      |
 |----------|----------------------------------|--------------|
 | `&`      | Bitwise AND                      | `a & b`      |
-| `|`      | Bitwise OR                       | `a | b`      |
 | `^`      | Bitwise XOR                      | `a ^ b`      |
 | `~`      | Bitwise NOT                      | `~a`         |
 | `<<`     | Left shift                       | `a << b`     |
