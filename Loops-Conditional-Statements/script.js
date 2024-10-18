@@ -1,55 +1,85 @@
-function runLoops() {
-    let output = "";
+const output = document.getElementById("output");
 
-    // For loop
-    for (let i = 1; i <= 5; i++) {
-        output += "For Loop - Iteration " + i + "<br>";
-    }
-
-    // While loop
-    let j = 1;
-    while (j <= 3) {
-        output += "While Loop - Iteration " + j + "<br>";
-        j++;
-    }
-
-    // Do-while loop
-    let k = 1;
-    do {
-        output += "Do-While Loop - Iteration " + k + "<br>";
-        k++;
-    } while (k <= 2);
-
-    document.getElementById("output").innerHTML = output;
+// For Loop
+output.innerHTML += "<h2>For Loop</h2>";
+for (let i = 0; i < 5; i++) {
+    output.innerHTML += "Value of i: " + i + "<br>";
 }
 
-function runConditions() {
-    let age = 18;
-    let output = "";
+// While Loop
+output.innerHTML += "<h2>While Loop</h2>";
+let j = 0;
+while (j < 5) {
+    output.innerHTML += "Value of j: " + j + "<br>";
+    j++;
+}
 
-    // if-else condition
-    if (age >= 18) {
-        output += "You are an adult.<br>";
-    } else {
-        output += "You are not an adult.<br>";
-    }
+// Do While Loop
+output.innerHTML += "<h2>Do While Loop</h2>";
+let k = 0;
+do {
+    output.innerHTML += "Value of k: " + k + "<br>";
+    k++;
+} while (k < 5);
 
-    // switch statement
-    let day = 3;
-    switch (day) {
-        case 1:
-            output += "It's Monday.<br>";
-            break;
-        case 2:
-            output += "It's Tuesday.<br>";
-            break;
-        case 3:
-            output += "It's Wednesday.<br>";
-            break;
-        default:
-            output += "It's another day.<br>";
-            break;
-    }
+// For...of Loop
+output.innerHTML += "<h2>For...of Loop</h2>";
+const arr = [1, 2, 3];
+for (const value of arr) {
+    output.innerHTML += "Value: " + value + "<br>";
+}
 
-    document.getElementById("output").innerHTML = output;
+// For...in Loop
+output.innerHTML += "<h2>For...in Loop</h2>";
+const obj = { a: 1, b: 2 };
+for (const key in obj) {
+    output.innerHTML += "Key: " + key + ", Value: " + obj[key] + "<br>";
+}
+
+// For Each Loop
+output.innerHTML += "<h2>For Each Loop</h2>";
+const numbers = [1, 2, 3, 4, 5];
+numbers.forEach((value, index) => {
+    output.innerHTML += `Index: ${index}, Value: ${value}<br>`;
+});
+
+// If Statement
+output.innerHTML += "<h2>If Statement</h2>";
+const age = 20;
+if (age >= 18) {
+    output.innerHTML += "You are an adult.<br>";
+}
+
+// If...else Statement
+output.innerHTML += "<h2>If...else Statement</h2>";
+const age2 = 16;
+if (age2 >= 18) {
+    output.innerHTML += "You are an adult.<br>";
+} else {
+    output.innerHTML += "You are a minor.<br>";
+}
+
+// If...else if...else Statement
+output.innerHTML += "<h2>If...else if...else Statement</h2>";
+const score = 85;
+if (score >= 90) {
+    output.innerHTML += "Grade: A<br>";
+} else if (score >= 75) {
+    output.innerHTML += "Grade: B<br>";
+} else {
+    output.innerHTML += "Grade: C<br>";
+}
+
+// Switch Statement
+output.innerHTML += "<h2>Switch Statement</h2>";
+const fruit = "apple";
+switch (fruit) {
+    case "banana":
+        output.innerHTML += "It's a banana.<br>";
+        break;
+    case "apple":
+        output.innerHTML += "It's an apple.<br>";
+        break;
+    default:
+        output.innerHTML += "Unknown fruit.<br>";
 }
