@@ -62,7 +62,7 @@ Loops in JavaScript are used to execute a block of code repeatedly until a speci
 
 ### 2.6. `forEach` Loop
 
-- **Description**: The `forEach` method is available for arrays and is used to execute a provided function once for each element in the array. Unlike traditional loops, it does not require you to explicitly manage the loop index.
+- **Description**: The `forEach` method is available for arrays and is used to execute a provided function once for each element in the array. Unlike traditional Loops, it does not require you to explicitly manage the loop index.
 
 - **Output**: This method provides a clean way to iterate through arrays and perform operations on each element.
 
