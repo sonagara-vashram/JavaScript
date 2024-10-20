@@ -19,7 +19,7 @@ The `console` object provides access to the browser’s debugging console. It al
     For `let name = "John";`:
 
     ```js
-    console.log(name);  // Output: John
+    console.log(name);
     ```
 
 ---
