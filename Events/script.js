@@ -62,8 +62,8 @@ window.addEventListener("unload", function() {
 
 // Event Listener for Before Unload Event
 window.addEventListener("beforeunload", function(event) {
-    event.preventDefault(); // Prevent default action
-    event.returnValue = ''; // Display confirmation dialog
+    event.preventDefault();
+    event.returnValue = '';
 });
 
 // Event Listener for Mouse Down Event
